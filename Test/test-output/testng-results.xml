@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" ignored="0" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="109420" started-at="2019-06-20T15:30:17Z" finished-at="2019-06-20T15:32:06Z">
+    <groups>
+      <group name="smoke">
+        <method signature="TestRunner_TestNG.OpenApplication(java.lang.String, java.lang.String)[pri:0, instance:Test.Project.TestRunner_TestNG@146ba0ac]" name="OpenApplication" class="Test.Project.TestRunner_TestNG"/>
+      </group> <!-- smoke -->
+      <group name="Regression">
+        <method signature="TestRunner_TestNG.performSearch()[pri:0, instance:Test.Project.TestRunner_TestNG@146ba0ac]" name="performSearch" class="Test.Project.TestRunner_TestNG"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test name="Default test" duration-ms="109420" started-at="2019-06-20T15:30:17Z" finished-at="2019-06-20T15:32:06Z">
+      <class name="Test.Project.TestRunner_TestNG">
+        <test-method status="PASS" signature="launchApplication()[pri:0, instance:Test.Project.TestRunner_TestNG@146ba0ac]" name="launchApplication" is-config="true" duration-ms="33565" started-at="2019-06-20T15:30:17Z" finished-at="2019-06-20T15:30:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:Test.Project.TestRunner_TestNG@146ba0ac]" name="setup" is-config="true" duration-ms="1" started-at="2019-06-20T15:30:51Z" finished-at="2019-06-20T15:30:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="OpenApplication(java.lang.String, java.lang.String)[pri:0, instance:Test.Project.TestRunner_TestNG@146ba0ac]" name="OpenApplication" duration-ms="71805" started-at="2019-06-20T15:30:51Z" description="Open Naukiri Site and Close unwanted popups" data-provider="applicationURL" finished-at="2019-06-20T15:32:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.naukri.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password56]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenApplication -->
+        <test-method status="FAIL" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:Test.Project.TestRunner_TestNG@146ba0ac]" name="takeScreenshot" is-config="true" duration-ms="3651" started-at="2019-06-20T15:32:02Z" finished-at="2019-06-20T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OpenApplication status=SUCCESS method=TestRunner_TestNG.OpenApplication(java.lang.String, java.lang.String)[pri:0, instance:Test.Project.TestRunner_TestNG@146ba0ac] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at Test.Project.TestRunner_TestNG.takeScreenshot(TestRunner_TestNG.java:120)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshot -->
+        <test-method status="SKIP" signature="setup()[pri:0, instance:Test.Project.TestRunner_TestNG@146ba0ac]" name="setup" is-config="true" duration-ms="0" started-at="2019-06-20T15:32:06Z" finished-at="2019-06-20T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="performSearch()[pri:0, instance:Test.Project.TestRunner_TestNG@146ba0ac]" name="performSearch" duration-ms="0" started-at="2019-06-20T15:32:06Z" description="Perform search for jobs" depends-on-methods="Test.Project.TestRunner_TestNG.OpenApplication" finished-at="2019-06-20T15:32:06Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at Test.Project.TestRunner_TestNG.takeScreenshot(TestRunner_TestNG.java:120)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- performSearch -->
+        <test-method status="SKIP" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:Test.Project.TestRunner_TestNG@146ba0ac]" name="takeScreenshot" is-config="true" duration-ms="0" started-at="2019-06-20T15:32:06Z" finished-at="2019-06-20T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshot -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:Test.Project.TestRunner_TestNG@146ba0ac]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2019-06-20T15:32:06Z" finished-at="2019-06-20T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Test.Project.TestRunner_TestNG -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

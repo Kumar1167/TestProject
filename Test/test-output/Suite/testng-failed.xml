@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="AppURL" value="http://www.naukri.com/"/>
+  <parameter name="Browser" value="Chrome"/>
+  <test thread-count="3" name="Test(failed)">
+    <classes>
+      <class name="Test.Project.TestRunner_TestNG">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="launchApplication"/>
+          <include name="setup"/>
+          <include name="OpenApplication"/>
+          <include name="performSearch"/>
+          <include name="takeScreenshot"/>
+        </methods>
+      </class> <!-- Test.Project.TestRunner_TestNG -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Suite" parallel="none">
+ <parameter name="Browser" value="Chrome" />
+ <parameter name="AppURL" value="http://www.naukri.com/" />
+  <test thread-count="5" name="Test">
+   <groups>	
+	<run>	
+     </run>	
+   </groups>
+    <classes>
+      <class name="Test.Project.TestRunner_TestNG" />
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
