@@ -104,11 +104,8 @@ public class TestRunner_TestNG extends BaseComponent.ReusableMethods{
 		@AfterMethod (groups = {"smoke"})
 		public void takeScreenshot(ITestResult result) throws Throwable, IOException {
 			   ExtentHtmlReporter reporter=new ExtentHtmlReporter(System.getProperty("user.dir") + "\\learn_automation2.html");
-				
 			    ExtentReports extent = new ExtentReports();
-			    
 			    extent.attachReporter(reporter);
-			    
 			    ExtentTest logger=extent.createTest("LoginTest");
 			    logger.log(Status.INFO, "status");
 			    
